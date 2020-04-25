@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5827d7fe-5b78-45e1-a578-b6796b33c888" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -170,21 +169,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587772662097</updated>
-      <workItem from="1587772666093" duration="22905000" />
+      <workItem from="1587772666093" duration="24456000" />
     </task>
+    <task id="LOCAL-00001" summary="added readme content">
+      <created>1587817805121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587817805121</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added readme content" />
+    <option name="LAST_COMMIT_MESSAGE" value="added readme content" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1978" y="313" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587773533539">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1978" y="313" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587773533539" />
+    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1587817804939">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587817804939" />
     <state x="1985" y="373" key="NewPhpClassDialog" timestamp="1587773248105">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1985" y="373" key="NewPhpClassDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587773248105" />
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1587817818450">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587817818450" />
   </component>
 </project>

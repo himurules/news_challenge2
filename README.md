@@ -26,6 +26,12 @@ Run ***composer install*** to install required libraries.
 
 Run ***npm install*** to install required javascript/css libraries.
 
+Create .env file ***cp .env.example .env***
+
+Generate the project key with the following command
+
+***php artisan key:generate***
+
 ## Configurations
 
 In the .env file in the root directory, specify the following
@@ -73,6 +79,8 @@ The second module is an interface to Twitter Streaming API **Path(/realtime)**.
 - The keywords to monitor can be changed in the .env with variable TWITTER_KEYWORDS
 
 ***php artisan connect_to_streaming_api > /dev/null 2>&1 &***
+
+Before running the project make sure the storage folder (/storage) have the read/write permission set for the webserver user
 
 To run the project locally use the following command
 
