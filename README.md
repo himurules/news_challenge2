@@ -1,5 +1,5 @@
 
-# Laravel Twitter API
+# Laravel Demo Twitter API
 <p align="center">
 A laravel based project which interacts with twitter api to search for tweets based on keywords. 
 </p>
@@ -57,6 +57,23 @@ Run the following command to generate the js/css files
 
 ***npm run dev***
 
-    
-    
-         
+## Project summary
+
+The project has 2 modules
+
+The first module in the homepage searches the tweets from the twitter API based on the query.
+- Search could be AND or OR based depending on the delimiter eg. (this OR that would search for both words in tweets this as well as that) while (this , that) will search for tweets having both words this and that.
+- This module uses the library  [thujohn/twitter](https://github.com/atymic/twitter) which is a wrapper for twitter API.
+
+The second module is an interface to Twitter Streaming API **Path(/realtime)**. 
+- It connects to and consume the Twitter stream via the Streaming API.
+- This module used the library [fennb/phirehose](https://github.com/fennb/phirehose)
+- It processed the tweets at real time and stores them in the database.
+- Please execute the following command to establish the connect and monitor twitter stream for keywords(kidspot, #kidspot, @kidspotsocial)
+- The keywords to monitor can be changed in the .env with variable TWITTER_KEYWORDS
+
+***php artisan connect_to_streaming_api > /dev/null 2>&1 &***
+
+To run the project locally use the following command
+
+***php artisan serve*** and browse to http://127.0.0.1:8000
