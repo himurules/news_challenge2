@@ -67,7 +67,7 @@ Run the following command to generate the js/css files
 
 The project has 2 modules
 
-The first module in the homepage searches the tweets from the twitter API based on the query.
+The first module in the homepage searches the tweets from the twitter API based on the query. The results are paginated with 100 records per page.This module does't require any database.
 - Search could be AND or OR based depending on the delimiter eg. (this OR that would search for both words in tweets this as well as that) while (this , that) will search for tweets having both words this and that.
 - This module uses the library  [thujohn/twitter](https://github.com/atymic/twitter) which is a wrapper for twitter API.
 

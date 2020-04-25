@@ -18,7 +18,7 @@ class ProcessTweet implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @param tweet to be processed
+     * @param $tweet tweet to be processed
      *
      * @return void
      */
@@ -35,22 +35,25 @@ class ProcessTweet implements ShouldQueue
     public function handle()
     {
         $tweet = json_decode($this->tweet, true);
-        //var_dump($tweet);
 
         $tweet_text = isset($tweet['text']) ? $tweet['text'] : null;
         $user_id = isset($tweet['user']['id_str']) ? $tweet['user']['id_str'] : null;
-        $user_screen_name = isset($tweet['user']['screen_name']) ? $tweet['user']['screen_name'] : null;
-        $user_avatar_url = isset($tweet['user']['profile_image_url_https']) ? $tweet['user']['profile_image_url_https'] : null;
+        $user_screen_name = isset($tweet['user']['screen_name']) ?
+                            $tweet['user']['screen_name'] : null;
+        $user_avatar_url = isset($tweet['user']['profile_image_url_https']) ?
+                            $tweet['user']['profile_image_url_https'] : null;
 
         if (isset($tweet['id'])) {
-            Tweet::create([
+            Tweet::create(
+                [
                 'id' => $tweet['id_str'],
                 'json' => $this->tweet,
                 'tweet_text' => $tweet_text,
                 'user_id' => $user_id,
                 'user_screen_name' => $user_screen_name,
                 'user_avatar_url' => $user_avatar_url,
-            ]);
+                ]
+            );
         }
     }
 }

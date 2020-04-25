@@ -15,21 +15,60 @@ class HomeController extends Controller
      */
     protected $twitterAPI;
 
+    /**
+     * HomeController constructor.
+     *
+     * @param TwitterAPI $twitterAPI model class
+     */
     public function __construct(TwitterAPI $twitterAPI)
     {
         $this->twitterAPI = $twitterAPI;
     }
 
-    public function index(Request $request){
-        $query = ($request->has('query') && $request->query !='') ? $request->input('query') : env('TWITTER_KEYWORDS', 'Kidspot OR @KidspotSocial OR #Kidspot');
+    /**
+     * Homepage Action
+     *
+     * @param Request $request http request
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index(Request $request)
+    {
+        $query = (
+            $request->has('q') && $request->query !=''
+            ) ? $request->input('q') :
+            env('TWITTER_KEYWORDS', 'Kidspot OR @KidspotSocial OR #Kidspot');
         $keywords = explode(',', $query);
-        $tweets = $this->twitterAPI->getTweets($keywords);
-        return view('welcome', ['tweets'=>$tweets, 'query'=>$query] );
+        $params = [
+            'q' => $keywords,
+        ];
+
+        if ($request->has('max_id') && $request->max_id !='') {
+            $params['max_id'] = $request->max_id;
+        }
+
+        $responseObj = $this->twitterAPI->getTweets($params);
+        return view(
+            'welcome',
+            [
+                'tweets' => $responseObj['tweets'],
+                'query' => $query,
+                'pagination' => isset($responseObj['pagination'])
+                    ? $responseObj['pagination'] : ''
+            ]
+        );
     }
 
-    public function realTime(Request $request){
-        $tweets = Tweet::orderBy('created_at','desc')->paginate(10);
-        //dd($tweets);
+    /**
+     * Realtime streaming action
+     *
+     * @param Request $request http request
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function realTime(Request $request)
+    {
+        $tweets = Tweet::orderBy('created_at', 'desc')->paginate(10);
         return view('tweets.realtime', ['tweets' => $tweets]);
     }
 }

@@ -16,7 +16,6 @@ class TwitterStream extends OauthPhirehose
      */
     public function enqueueStatus($status)
     {
-        // TODO: Implement enqueueStatus() method.
         $this->dispatch(new ProcessTweet($status));
     }
 }

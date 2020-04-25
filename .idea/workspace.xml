@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5827d7fe-5b78-45e1-a578-b6796b33c888" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/ProcessTweet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/ProcessTweet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Streams/TwitterStream.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Streams/TwitterStream.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tweet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tweet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/TwitterAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/TwitterAPI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tweets/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tweets/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -131,6 +144,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -144,7 +158,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="settings.php.quality.tools" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -171,7 +185,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587772662097</updated>
-      <workItem from="1587772666093" duration="25347000" />
+      <workItem from="1587772666093" duration="26199000" />
+      <workItem from="1587849295450" duration="4366000" />
     </task>
     <task id="LOCAL-00001" summary="added readme content">
       <created>1587817805121</created>
@@ -194,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587820262752</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated favicon">
+      <created>1587820606426</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587820606426</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,24 +226,37 @@
     <MESSAGE value="added readme content" />
     <MESSAGE value="modified readme content" />
     <MESSAGE value="change button value" />
-    <option name="LAST_COMMIT_MESSAGE" value="change button value" />
+    <MESSAGE value="updated favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated favicon" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1828" y="213" key="#Mess_Detector" timestamp="1587849735461">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1828" y="213" key="#Mess_Detector/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587849735461" />
+    <state x="1828" y="213" key="#PHP_CodeSniffer" timestamp="1587849759615">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1828" y="213" key="#PHP_CodeSniffer/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587849759615" />
     <state x="1978" y="313" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587773533539">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1978" y="313" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587773533539" />
-    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1587820262601">
+    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1587820606266">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587820262601" />
+    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587820606266" />
     <state x="1985" y="373" key="NewPhpClassDialog" timestamp="1587773248105">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1985" y="373" key="NewPhpClassDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587773248105" />
-    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1587820271863">
+    <state x="1749" y="190" key="SettingsEditor" timestamp="1587849761664">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587820271863" />
+    <state x="1749" y="190" key="SettingsEditor/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587849761664" />
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1587820614604">
+      <screen x="1280" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587820614604" />
   </component>
 </project>
