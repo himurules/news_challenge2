@@ -9,7 +9,7 @@
                         <label for="query" class="col-form-label">
                             Current Query: <input type="text" name="query" id="query" value="{{$query}}"/>
                         </label>
-                        <input type="submit" value="Change Query" class="btn-primary"/>
+                        <input type="submit" value="Search Tweets" class="btn-primary"/>
                     </form>
                 </div>
                 <div class="form-group">

@@ -4,7 +4,7 @@
 A laravel based project which interacts with twitter api to search for tweets based on keywords. 
 </p>
 <p align="center">
-    <a href="https://twitterapi.himanshukotnala.com">
+    <a href="https://twitterapi.himanshukotnala.com" target="_blank">
         Click here to see a working prototype of the application
     </a>
 </p>
