@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5827d7fe-5b78-45e1-a578-b6796b33c888" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ConnectToStreamingAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ConnectToStreamingAPI.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/ProcessTweet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/ProcessTweet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Streams/TwitterStream.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Streams/TwitterStream.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tweet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tweet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/TwitterAPI.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/TwitterAPI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tweets/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tweets/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587772662097</updated>
       <workItem from="1587772666093" duration="26199000" />
-      <workItem from="1587849295450" duration="4366000" />
+      <workItem from="1587849295450" duration="5016000" />
+      <workItem from="1587944431542" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="added readme content">
       <created>1587817805121</created>
@@ -216,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587820606426</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added pagination, update README.md">
+      <created>1587853918258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587853918259</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +224,8 @@
     <MESSAGE value="modified readme content" />
     <MESSAGE value="change button value" />
     <MESSAGE value="updated favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated favicon" />
+    <MESSAGE value="added pagination, update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pagination, update README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1828" y="213" key="#Mess_Detector" timestamp="1587849735461">
@@ -242,10 +240,10 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1978" y="313" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587773533539" />
-    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1587820606266">
+    <state x="1834" y="152" key="CommitChangelistDialog2" timestamp="1587853917906">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587820606266" />
+    <state x="1834" y="152" key="CommitChangelistDialog2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587853917906" />
     <state x="1985" y="373" key="NewPhpClassDialog" timestamp="1587773248105">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
@@ -254,9 +252,9 @@
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
     <state x="1749" y="190" key="SettingsEditor/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587849761664" />
-    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1587820614604">
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2" timestamp="1587853929294">
       <screen x="1280" y="23" width="1920" height="1057" />
     </state>
-    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587820614604" />
+    <state x="1840" y="289" key="Vcs.Push.Dialog.v2/1280.23.1920.1057/0.23.1280.773@1280.23.1920.1057" timestamp="1587853929294" />
   </component>
 </project>

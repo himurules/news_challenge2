@@ -49,8 +49,11 @@ class ConnectToStreamingAPI extends Command
     {
         $twitter_consumer_key = env('TWITTER_CONSUMER_KEY', '');
         $twitter_consumer_secret = env('TWITTER_CONSUMER_SECRET', '');
-        $keywords_string = env('TWITTER_KEYWORDS', 'Kidspot OR @KidspotSocial OR #Kidspot');
-        $keywords = explode('OR',$keywords_string);
+        $keywords_string = env(
+            'TWITTER_KEYWORDS',
+            'Kidspot OR @KidspotSocial OR #Kidspot'
+        );
+        $keywords = explode('OR', $keywords_string);
         $this->twitterStream->consumerKey = $twitter_consumer_key;
         $this->twitterStream->consumerSecret = $twitter_consumer_secret;
         $this->twitterStream->setTrack($keywords);
