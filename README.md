@@ -77,6 +77,7 @@ The second module is an interface to Twitter Streaming API **Path(/realtime)**.
 - It processed the tweets at real time and stores them in the database.
 - Please execute the following command to establish the connect and monitor twitter stream for keywords(kidspot, #kidspot, @kidspotsocial)
 - The keywords to monitor can be changed in the .env with variable TWITTER_KEYWORDS
+- This section will ignore retweets by checking for retweeted_status property in the tweet
 
 ***php artisan connect_to_streaming_api > /dev/null 2>&1 &***
 
